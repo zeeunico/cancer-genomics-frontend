@@ -152,7 +152,7 @@ var config = {
                 ? JSON.stringify(
                       cleanAndValidateUrl(process.env.CBIOPORTAL_URL)
                   )
-                : '"replace_me_env_cbioportal_url"',
+                : '"https://www.cbioportal.org"',
             ENV_GENOME_NEXUS_URL: process.env.GENOME_NEXUS_URL
                 ? JSON.stringify(
                       cleanAndValidateUrl(process.env.GENOME_NEXUS_URL)

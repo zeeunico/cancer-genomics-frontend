@@ -125,7 +125,7 @@ export default class PortalHeader extends React.Component<
                             src={
                                 !!getcBioPortalLogoUrl()
                                     ? getcBioPortalLogoUrl()
-                                    : require('../../globalStyles/images/cbioportal_logo.png')
+                                    : require('../../globalStyles/images/neuroxie.png')
                             }
                             alt="cBioPortal Logo"
                         />

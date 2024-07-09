@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # eval output of this file to get appropriate env variables e.g. eval "$(./env_vars.sh)"
+
+
 BRANCH_ENV=master
+
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 RED='\033[0;31m'
 NC='\033[0m'
@@ -48,3 +51,8 @@ else
     echo -e "${RED}or export BRANCH_ENV=rc${NC}"
     exit 1
 fi
+
+
+export CBIOPORTAL_URL="${CBIOPORTAL_URL:-https://www.cbioportal.org}"
+export GENOME_NEXUS_URL="${GENOME_NEXUS_URL:-https://www.genomenexus.org}"
+export BACKEND=cbioportal:demo-fix-clinical-table-sorting
